@@ -103,7 +103,7 @@ npm install
 npm run dev
 ```
 
-Abre [http://localhost:5173](http://localhost:5173) en tu navegador.
+Abre https://tacgozca2024-arch.github.io/PowerFlex-Gym/ en tu navegador.
 
 ### 4. Construir para producción
 
