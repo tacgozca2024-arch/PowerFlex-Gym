@@ -1,0 +1,103 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #0f0f0f;
+  transition: box-shadow 0.3s;
+}
+.navbar.scrolled { box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
+
+.navbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.nav-logo img { border-radius: 8px; object-fit: cover; }
+.nav-brand {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 20px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.nav-brand em { color: #e53935; font-style: normal; }
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+
+.nav-link {
+  color: #aaa;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .8px;
+  transition: color 0.2s;
+  position: relative;
+  padding-bottom: 2px;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0; right: 0;
+  height: 2px;
+  background: #e53935;
+  transform: scaleX(0);
+  transition: transform 0.25s;
+}
+.nav-link:hover,
+.nav-link.active { color: #fff; }
+.nav-link.active::after,
+.nav-link:hover::after { transform: scaleX(1); }
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+.bar {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #fff;
+  transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    position: fixed;
+    inset: 64px 0 0 0;
+    background: rgba(15,15,15,0.97);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+    z-index: 999;
+  }
+  .nav-links.open { opacity: 1; pointer-events: auto; }
+  .nav-link { font-size: 20px; }
+  .hamburger { display: flex; }
+  .gym-btn { display: none; }
+}

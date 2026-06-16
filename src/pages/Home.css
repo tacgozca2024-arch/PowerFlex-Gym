@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;600;700;900&display=swap');
+
+.hero {
+  position: relative;
+  height: 520px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+}
+@media (max-width: 768px) { .hero { height: 360px; } }
+
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.9s ease;
+}
+.hero-slide.on { opacity: 1; }
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,.88) 0%, rgba(0,0,0,.25) 55%, transparent 100%);
+}
+
+.hero-caption {
+  position: relative;
+  z-index: 2;
+  padding-bottom: 52px;
+}
+.hero-caption h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 72px;
+  color: #fff;
+  line-height: 1;
+  letter-spacing: 2px;
+}
+.hero-caption h1 span { color: #e53935; }
+.hero-caption p { color: #ccc; font-size: 16px; margin: 10px 0 24px; }
+@media (max-width: 768px) {
+  .hero-caption h1 { font-size: 44px; }
+  .hero-caption p  { font-size: 14px; }
+}
+
+.hero-btns { display: flex; gap: 12px; flex-wrap: wrap; }
+
+.hero-dots {
+  position: absolute;
+  bottom: 18px;
+  right: 24px;
+  z-index: 3;
+  display: flex;
+  gap: 8px;
+}
+.hdot {
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.3);
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.hdot.on { background: #e53935; transform: scale(1.3); }
+
+.stats { background: #e53935; padding: 32px 0; }
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  text-align: center;
+}
+@media (max-width: 600px) { .stats-grid { grid-template-columns: repeat(2, 1fr); } }
+.stat-n {
+  display: block;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 48px;
+  color: #fff;
+  line-height: 1;
+  letter-spacing: 1px;
+}
+.stat-l {
+  display: block;
+  font-size: 12px;
+  color: rgba(255,255,255,0.75);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 4px;
+}
+
+.benefits { padding: 72px 0; }
+.ben-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 40px;
+}
+@media (max-width: 900px) { .ben-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .ben-grid { grid-template-columns: 1fr; } }
+
+.ben-card {
+  background: #1a1a1a;
+  color: #fff;
+  padding: 28px 24px;
+  border-radius: 12px;
+  border-bottom: 3px solid #e53935;
+  transition: transform 0.25s;
+  text-align: left;
+}
+.ben-card:hover { transform: translateY(-5px); }
+.ben-icon {
+  font-size: 30px;
+  color: #e53935;
+  display: block;
+  margin-bottom: 14px;
+}
+.ben-card h3 { font-size: 16px; font-weight: 700; margin-bottom: 8px; }
+.ben-card p  { font-size: 13px; color: #aaa; line-height: 1.6; }
+
+.gallery { background: #0f0f0f; padding: 72px 0; }
+.gal-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-top: 36px;
+}
+@media (max-width: 900px) { .gal-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 480px) { .gal-grid { grid-template-columns: 1fr; } }
+
+.gal-item {
+  position: relative;
+  height: 180px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #222;
+}
+.gal-item img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s;
+}
+.gal-item:hover img { transform: scale(1.06); }
+
+.gal-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(229,57,53,0);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: background 0.3s;
+}
+.gal-item:hover .gal-overlay { background: rgba(229,57,53,0.55); }
+
+
+.cta-section { background: #1a1a1a; padding: 72px 0; }
+.cta-inner { text-align: center; }
+.cta-inner p { color: #aaa; font-size: 16px; margin: 12px 0 28px; }
+.cta-btns {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.cta-btns .gym-btn i { margin-right: 6px; }

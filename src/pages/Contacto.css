@@ -1,0 +1,105 @@
+.contact-sec {
+  padding: 64px 24px;
+  display: flex;
+  justify-content: center;
+  background: #e5e5e5;
+}
+
+.contact-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #0f0f0f;
+  border-radius: 20px;
+  overflow: hidden;
+  min-height: 480px;
+}
+@media (max-width: 768px) { .contact-wrap { grid-template-columns: 1fr; } }
+
+.c-left {
+  padding: 52px 44px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  color: #fff;
+}
+@media (max-width: 768px) { .c-left { padding: 36px 28px; } }
+
+.c-left p { font-size: 14px; color: #aaa; line-height: 1.7; }
+
+.c-info-list { display: flex; flex-direction: column; gap: 12px; }
+.c-info-item { display: flex; align-items: flex-start; gap: 12px; font-size: 13px; color: #ccc; }
+.c-info-item i { color: #e53935; font-size: 17px; margin-top: 1px; flex-shrink: 0; }
+
+.c-socials { display: flex; gap: 14px; margin-top: 4px; }
+.c-social {
+  width: 38px; height: 38px;
+  border-radius: 8px;
+  background: #1a1a1a;
+  color: #e53935;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 18px;
+  transition: background 0.2s, color 0.2s;
+  border: 1px solid #2a2a2a;
+}
+.c-social:hover { background: #e53935; color: #fff; }
+
+.c-right {
+  background: #e53935;
+  padding: 52px 44px;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 768px) { .c-right { padding: 36px 28px; } }
+
+.c-form { width: 100%; display: flex; flex-direction: column; gap: 16px; }
+
+.c-form-group { display: flex; flex-direction: column; gap: 6px; }
+.c-form-group label {
+  font-size: 11px;
+  font-weight: 700;
+  color: rgba(0,0,0,0.55);
+  text-transform: uppercase;
+  letter-spacing: .8px;
+}
+.c-form-group input,
+.c-form-group select {
+  padding: 12px 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  background: rgba(255,255,255,0.22);
+  color: #fff;
+  outline: none;
+  font-family: 'Barlow', sans-serif;
+  transition: background 0.2s;
+}
+.c-form-group input::placeholder { color: rgba(255,255,255,0.6); }
+.c-form-group input:focus,
+.c-form-group select:focus { background: rgba(255,255,255,0.32); }
+.c-form-group select option { background: #1a1a1a; color: #fff; }
+
+.c-send {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #0f0f0f;
+  margin-top: 4px;
+  padding: 14px;
+}
+.c-send:hover { background: #222; }
+
+.sent-msg {
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+.sent-msg i { font-size: 52px; }
+.sent-msg h3 { font-size: 22px; font-weight: 700; }
+.sent-msg p  { font-size: 14px; color: rgba(255,255,255,0.8); line-height: 1.6; }
