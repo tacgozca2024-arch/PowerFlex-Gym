@@ -64,7 +64,7 @@ gym-power-flex/
 - CTA final con enlace a WhatsApp
 
 ### 💳 Planes (`/planes`)
-- 3 planes de membresía: Básico (S/.19), Pro (S/.39), Premium (S/.59)
+- 3 planes de membresía: Básico (S/.60), Pro (S/.100), Premium (S/.150)
 - Plan "Más popular" destacado con borde rojo
 - Features incluidas y excluidas con íconos visuales
 - Sección de beneficios comunes a todos los planes
@@ -80,57 +80,6 @@ gym-power-flex/
 - Información de contacto: teléfono, dirección, email y horarios
 - Íconos de redes sociales
 
----
-
-## ⚙️ Instalación y uso
-
-### 1. Clonar o descargar el proyecto
-
-```bash
-git clone https://github.com/tu-usuario/gym-power-flex.git
-cd gym-power-flex
-```
-
-### 2. Instalar dependencias
-
-```bash
-npm install
-```
-
-### 3. Correr en modo desarrollo
-
-```bash
-npm run dev
-```
-
-Abre https://tacgozca2024-arch.github.io/PowerFlex-Gym/ en tu navegador.
-
-### 4. Construir para producción
-
-```bash
-npm run build
-```
-
-Los archivos listos para subir quedan en la carpeta `dist/`.
-
-### 5. Vista previa de producción
-
-```bash
-npm run preview
-```
-
----
-
-## 🎨 Paleta de colores
-
-| Variable | Color | Uso |
-|---|---|---|
-| `--red` | `#e53935` | Color principal, botones, acentos |
-| `--red2` | `#ff4d4d` | Hover de botones |
-| `--black` | `#0f0f0f` | Navbar, footer, fondos oscuros |
-| `--dark` | `#1a1a1a` | Cards, secciones secundarias |
-| `--gray` | `#E5E5E5` | Fondo general de la página |
-| `--muted` | `#aaaaaa` | Textos secundarios |
 
 ---
 
