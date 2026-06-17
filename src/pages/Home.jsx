@@ -4,9 +4,9 @@ import './Home.css'
 
 
 const SLIDES = [
-  { img: '/public/images/carrusel1.jpg', title: 'EL TEMPLO DE', highlight: 'LA MUSCULACIÓN', sub: 'Transforma tu cuerpo. Supera tus límites.' },
-  { img: '/public/images/carrusel2.jpg', title: 'ENTRENA CON', highlight: 'PROPÓSITO', sub: 'Rutinas personalizadas. Resultados reales.' },
-  { img: '/public/images/gym7.jpeg', title: 'MONSEFÚ,', highlight: 'LAMBAYEQUE', sub: 'Tu gimnasio de confianza. Desde S/.19/mes.' },
+  { img: '/images/carrusel1.jpg', title: 'EL TEMPLO DE', highlight: 'LA MUSCULACIÓN', sub: 'Transforma tu cuerpo. Supera tus límites.' },
+  { img: '/images/carrusel2.jpg', title: 'ENTRENA CON', highlight: 'PROPÓSITO', sub: 'Rutinas personalizadas. Resultados reales.' },
+  { img: '/images/gym7.jpeg', title: 'MONSEFÚ,', highlight: 'LAMBAYEQUE', sub: 'Tu gimnasio de confianza. Desde S/.19/mes.' },
 ]
 
 function Hero() {
@@ -122,9 +122,9 @@ function Benefits() {
 
 
 const GALLERY = [
-  '/public/images/gym1.jpeg', '/public/images/gym2.jpeg', '/public/images/gym3.jpeg',
-  '/public/images/gym4.jpeg', '/public/images/gym5.jpeg', '/public/images/gym6.jpeg',
-  '/public/images/gym7.jpeg', '/public/images/gym8.jpeg',
+  '/images/gym1.jpeg', '/images/gym2.jpeg', '/images/gym3.jpeg',
+  '/images/gym4.jpeg', '/images/gym5.jpeg', '/images/gym6.jpeg',
+  '/images/gym7.jpeg', '/images/gym8.jpeg',
 ]
 
 function Gallery() {
