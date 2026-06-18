@@ -29,7 +29,7 @@ export default function Contacto() {
               {[
                 { icon: 'bi-telephone-fill', text: '+51 977 874 754' },
                 { icon: 'bi-geo-alt-fill',   text: 'Quiñones N°007, Monsefú, Lambayeque' },
-                { icon: 'bi-envelope-fill',  text: 'hola@gyppowerflex.com' },
+                { icon: 'bi-envelope-fill',  text: 'victorp@gyppowerflex.com' },
                 { icon: 'bi-clock-fill',     text: 'Lun–Vie 6am–10pm · Sáb 7am–8pm · Dom 8am–2pm' },
               ].map(({ icon, text }) => (
                 <div key={text} className="c-info-item">
@@ -80,9 +80,9 @@ export default function Contacto() {
                   <label htmlFor="servicio">Servicio de interés</label>
                   <select id="servicio" name="servicio" value={form.servicio} onChange={handleChange} required>
                     <option value="" disabled>Selecciona un plan</option>
-                    <option>Plan Básico — S/.19/mes</option>
-                    <option>Plan Pro — S/.39/mes</option>
-                    <option>Plan Premium — S/.59/mes</option>
+                    <option>Plan Básico — S/.60/mes</option>
+                    <option>Plan Pro — S/.100/mes</option>
+                    <option>Plan Premium — S/.150/mes</option>
                     <option>Entrenamiento personal</option>
                     <option>Clases grupales</option>
                   </select>
