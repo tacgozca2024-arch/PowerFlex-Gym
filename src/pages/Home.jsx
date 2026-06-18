@@ -2,11 +2,12 @@ import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import './Home.css'
 
+const BASE = import.meta.env.BASE_URL
 
 const SLIDES = [
-  { img: '/images/carrusel1.jpg', title: 'EL TEMPLO DE', highlight: 'LA MUSCULACIÓN', sub: 'Transforma tu cuerpo. Supera tus límites.' },
-  { img: '/images/carrusel2.jpg', title: 'ENTRENA CON', highlight: 'PROPÓSITO', sub: 'Rutinas personalizadas. Resultados reales.' },
-  { img: '/images/gym7.jpeg', title: 'MONSEFÚ,', highlight: 'LAMBAYEQUE', sub: 'Tu gimnasio de confianza. Desde S/.19/mes.' },
+  { img: `${BASE}images/carrusel1.jpg`, title: 'EL TEMPLO DE', highlight: 'LA MUSCULACIÓN', sub: 'Transforma tu cuerpo. Supera tus límites.' },
+  { img: `${BASE}images/carrusel2.jpg`, title: 'ENTRENA CON', highlight: 'PROPÓSITO', sub: 'Rutinas personalizadas. Resultados reales.' },
+  { img: `${BASE}images/gym7.jpeg`, title: 'MONSEFÚ,', highlight: 'LAMBAYEQUE', sub: 'Tu gimnasio de confianza. Desde S/.19/mes.' },
 ]
 
 function Hero() {
@@ -122,9 +123,9 @@ function Benefits() {
 
 
 const GALLERY = [
-  '/images/gym1.jpeg', '/images/gym2.jpeg', '/images/gym3.jpeg',
-  '/images/gym4.jpeg', '/images/gym5.jpeg', '/images/gym6.jpeg',
-  '/images/gym7.jpeg', '/images/gym8.jpeg',
+  `${BASE}images/gym1.jpeg`, `${BASE}images/gym2.jpeg`, `${BASE}images/gym3.jpeg`,
+  `${BASE}images/gym4.jpeg`, `${BASE}images/gym5.jpeg`, `${BASE}images/gym6.jpeg`,
+  `${BASE}images/gym7.jpeg`, `${BASE}images/gym8.jpeg`,
 ]
 
 function Gallery() {
