@@ -20,7 +20,7 @@ export default function Navbar() {
       <nav className="container navbar-inner">
 
         <NavLink to="/" className="nav-logo">
-          <img src="/public/images/logo.jpg" alt="Gym Power Flex" width="48" height="48" />
+          <img src="/images/logo.jpg" alt="Gym Power Flex" width="48" height="48" />
           <span className="nav-brand">POWER<em>FLEX</em></span>
         </NavLink>
 
