@@ -1,0 +1,26 @@
+.gym-btn {
+  display: inline-block;
+  background: #e53935;
+  color: #fff;
+  padding: 11px 24px;
+  border-radius: 7px;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-family: 'Barlow', sans-serif;
+}
+.gym-btn:hover { background: #ff4d4d; }
+
+.gym-btn.outline {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
+.gym-btn.outline:hover {
+  background: #fff;
+  color: #0f0f0f;
+}
