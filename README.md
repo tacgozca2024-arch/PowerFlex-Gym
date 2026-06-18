@@ -124,5 +124,5 @@ El sitio es totalmente responsive con breakpoints en:
 ## 👨‍💻 Autor
 
 Proyecto desarrollado como **proyecto final** del curso de Desarrollo Frontend.
-
+> Eduardo Adolfo Gozalo Campos - Desarrollador Frontend
 > *Gym Power Flex — El templo de la Musculación* 💪
